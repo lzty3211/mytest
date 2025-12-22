@@ -4,15 +4,15 @@ st.set_page_config(page_title="相册网站", page_icon="📸")
 
 image_ua = [
     {
-        'url': 'https://cdn.britannica.com/73/9173-050-9D9EA4BA.jpg',
+        'url': 'https://img95.699pic.com/photo/60049/1525.jpg_wh860.jpg',
         'text': '鱼'
     },
     {
-        'url': 'https://tse3-mm.cn.bing.net/th/id/OIP-C.f219Grmy5nMdkLKGqX_MKgHaE7?w=266&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1',
+        'url': 'https://img95.699pic.com/photo/50506/1953.jpg_wh860.jpg',
         'text': '鸟'
     },
     {
-        'url': 'https://www.baltana.com/files/wallpapers-2/Cute-Cat-Images-07756.jpg',
+        'url': 'https://pic4.zhimg.com/v2-a2c9c4f88ba1f459c5e6239368cc0337_r.jpg',
         'text': '猫'
     }
 ]
