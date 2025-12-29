@@ -12,27 +12,13 @@ def introduce_page():
     """当选择简介页面时，将呈现该函数的内容"""
     st.write("# 欢迎使用")
     st.sidebar.success("单击预测医疗费用")
-    st.markdown(
-        """
-        
-        这个应用利用机器学习模型来预测医疗费用，为保险公司的保险定价提供参考。
-        
-        - 开发目标: 帮助保险公司合理定价保险产品，控制风险
-        - 模型算法: 利用随机森林回归算法训练医疗费用预测模型
-        
-        - 输入准确完整的被保险人信息，可以得到更准确的费用预测
-        - 预测结果可以作为保险定价的重要参考，但需审慎决策
-        - 有任何问题欢迎联系我们的技术支持
-        
-        技术支持: 📧 support@example.com
-        """
-    )
+    
 
 def predict_page():
     """当选择预测费用页面时，将呈现该函数的内容"""
+    st.write("# 使用说明")
     st.markdown(
         """
-        ## 使用说明
         这个应用利用机器学习模型来预测医疗费用，为保险公司的保险定价提供参考。
         - **输入信息**: 在下面输入被保险人的个人信息、疾病信息等
         - **费用预测**: 应用会预测被保险人的未来医疗费用支出
@@ -102,7 +88,6 @@ def predict_page():
                 # 使用模型进行预测
                 predict_result = rfr_model.predict(format_data_df)[0]
                 st.write(f'根据您输入的数据，预测该客户的医疗费用是: {round(predict_result, 2)}')
-                st.write("技术支持: 📧 support@example.com")
                 
             except FileNotFoundError:
                 st.error("模型文件未找到，请确保rfr_model.pkl存在于当前目录")
